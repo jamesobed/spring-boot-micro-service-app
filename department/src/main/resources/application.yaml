@@ -1,0 +1,22 @@
+
+spring:
+  application:
+    name: department-service
+  config:
+    import: optional:configserver:http://localhost:7090 # Corrected syntax
+
+#=======================================================================================#
+# to be sent to config
+#=======================================================================================#
+#eureka:
+#  client:
+#    service-url:
+#      defaultZone: http://localhost:8761/eureka/
+#
+#server:
+#  port: 8001
+#
+#management:
+#  tracing:
+#    sampling:
+#      probability: 1.0
